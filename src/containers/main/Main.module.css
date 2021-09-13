@@ -1,0 +1,25 @@
+.landscape{
+    background-image: url("../../images/torres.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: -20rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landscape > div {
+    width: 40vw;
+    text-align: center;
+}
+@media (max-width: 568px){
+    .landscape{
+        background-size: cover;
+        background-position-y: initial;
+    }
+    .landscape > div {
+        width: 80vw;
+    }
+}

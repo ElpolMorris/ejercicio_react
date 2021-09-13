@@ -1,0 +1,47 @@
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+.nav > div {
+    width: 50%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: #457ABF;
+}
+.nav > div > a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 1rem;
+}
+.nav > div:nth-child(2){
+    justify-content: end;
+}
+
+.icon {
+    display: none;
+    margin-right: 2rem;
+}
+
+.none {
+    display: none !important;
+}
+@media  (max-width: 568px){
+    .nav {
+        flex-direction: column;
+    }
+    .nav > div {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .icon {
+        display: block;
+    }
+    .nav > div:nth-child(2){
+        justify-content: center;
+    }
+}

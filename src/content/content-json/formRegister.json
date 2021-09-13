@@ -1,0 +1,65 @@
+[
+	{
+		"placeholder": "ingrese nombre",
+		"type": "text",
+		"label": "nombre",
+        "name":"",
+        "value":""
+	},
+	{
+		"placeholder": "ingrese nombre de usuario",
+		"type": "text",
+		"label": "usuario",
+        "name":"",
+        "value":""
+	},
+	{
+		"placeholder": "ingrese su correo",
+		"type": "email",
+		"label": "Correo electrónico",
+        "name":"",
+        "value":""
+	},
+	{
+		"placeholder": "ingrese contraseña",
+		"type": "password",
+		"label": "constraseña",
+        "name":"",
+        "value":""
+	},
+	{
+		"placeholder": "ingrese contraseña",
+		"type": "date",
+		"label": "fecha de nacimiento",
+        "name":"",
+        "value":""
+	},
+	{
+		"type": "radio",
+		"label": "Masculino",
+        "name": "generoUsuario",
+        "value": "1"
+	},
+	{
+		"type": "radio",
+		"label": "Femenino",
+        "name": "generoUsuario",
+        "value": "2"
+	},
+	{
+		"type": "radio",
+		"label": "Otro",
+        "name": "generoUsuario",
+        "value": "3"
+	},
+	{
+		"placeholder": "(código de área) + 9 dígitos ej. +56911111111",
+		"type": "tel",
+		"label": "Número de contacto"
+	},
+	{
+		"placeholder": "(código de área) + 9 dígitos ej. +56911111111",
+		"type": "tel",
+		"label": "Número de emergencia"
+	}
+]

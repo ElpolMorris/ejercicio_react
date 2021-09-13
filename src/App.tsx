@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import {BrowserRouter as Router,
+  Switch,
+  Route} from "react-router-dom"
+import Login from './containers/login/Login';
+import Main from './containers/main/Main';
+import Register from './containers/register/Register';
+import NotFound from './containers/not-found/NotFound';
+import Dashboard from './containers/dashboard/Dashboard';
+import NavLink from './components/navlink/NavLink';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <NavLink />
+        <Switch>
+          <Route path="/" exact>
+            <Main title="Avisos de salida a la Montaña" subtitle="Registra tu salida y estaremos atentos a tu retorno"/>
+          </Route>
+          <Route path="/login">
+            <Login title="Login"/>
+          </Route>
+          <Route path="/register">
+            <Register title="Registro" />
+          </Route>
+          <Route path="/:username/dashboard">
+            <Dashboard title="dashboard" />
+          </Route>
+          <Route path="*">
+            <NotFound title="not-found" />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
