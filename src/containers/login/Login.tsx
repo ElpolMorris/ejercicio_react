@@ -1,15 +1,16 @@
 import React from 'react'
-import Form from '../../components/form/Form'
-import formLogin from "../../content/content-json/formLogin.json"
+import FormLogin from '../../components/form-login/FormLogin'
+import styles from "./Login.module.css"
+
 interface Props {
     title: string
 }
 
 const Login = (props: Props) => {
     return (
-        <div>
+        <div className={styles.flex}>
             <h1>{props.title}</h1>
-            <Form inputs={formLogin}/>
+            <FormLogin />
         </div>
     )
 }

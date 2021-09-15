@@ -4,11 +4,12 @@ interface Props {
     children?:  React.ReactChild    | React.ReactChild[];
     color: string;
     typeButton?: 'submit' | 'button';
+    action?: any;
 }
 
 const Button = (props: Props) => {
     return (
-        <button type={props.typeButton || "button"} className={`${styles.btn} ${styles[`btn-${props.color}`]}`}>
+        <button onClick={props.action} type={props.typeButton || "button"} className={`${styles.btn} ${styles[`btn-${props.color}`]}`}>
             {props.children}
         </button>
     )

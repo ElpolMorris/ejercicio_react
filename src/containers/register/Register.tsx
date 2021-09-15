@@ -1,6 +1,5 @@
 import React from 'react'
-import Form from '../../components/form/Form'
-import inputRegister from "../../content/content-json/formRegister.json"
+import FormRegister from '../../components/form-register/FormRegister'
 import styles from "./Register.module.css"
 
 interface Props {
@@ -12,8 +11,8 @@ interface Props {
 const Register = (props: Props) => {
     return (
         <div className={styles.flex}>
-            <h1>{props.title}</h1>
-            <Form inputs={inputRegister}/>
+            <h1 className={styles["margin-nav"]}>{props.title}</h1>
+            <FormRegister />
         </div>
     )
 }

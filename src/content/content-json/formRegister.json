@@ -28,30 +28,13 @@
         "value":""
 	},
 	{
-		"placeholder": "ingrese contraseña",
+		"placeholder": "ingrese fecha de nacimiento",
 		"type": "date",
 		"label": "fecha de nacimiento",
         "name":"",
         "value":""
 	},
-	{
-		"type": "radio",
-		"label": "Masculino",
-        "name": "generoUsuario",
-        "value": "1"
-	},
-	{
-		"type": "radio",
-		"label": "Femenino",
-        "name": "generoUsuario",
-        "value": "2"
-	},
-	{
-		"type": "radio",
-		"label": "Otro",
-        "name": "generoUsuario",
-        "value": "3"
-	},
+	
 	{
 		"placeholder": "(código de área) + 9 dígitos ej. +56911111111",
 		"type": "tel",

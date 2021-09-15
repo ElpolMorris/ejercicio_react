@@ -30,6 +30,10 @@
 .none {
     display: none !important;
 }
+.pointer{
+    cursor: pointer;
+    color: white;
+}
 @media  (max-width: 568px){
     .nav {
         flex-direction: column;

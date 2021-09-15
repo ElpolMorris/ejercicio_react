@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import FormDeparture from '../../components/form-departure/FormDeparture'
+import Map from '../../components/map/Map'
 
-interface Props {
-    title: string
-}
 
-const Dashboard = (props: Props) => {
+
+const Dashboard = () => {
+
+    // useEffect(() => {
+        
+    // }, [])
+
     return (
         <div>
-            <h1>{props.title}</h1>
+            <h1>Dashboard</h1>
+            <FormDeparture />
+            <Map />
         </div>
     )
 }
