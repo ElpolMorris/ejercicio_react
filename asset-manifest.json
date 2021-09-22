@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ElpolMorris/ejercicio_react/static/css/main.7038a105.chunk.css",
+    "main.js": "/ElpolMorris/ejercicio_react/static/js/main.b7d73b83.chunk.js",
+    "main.js.map": "/ElpolMorris/ejercicio_react/static/js/main.b7d73b83.chunk.js.map",
+    "runtime-main.js": "/ElpolMorris/ejercicio_react/static/js/runtime-main.2628de15.js",
+    "runtime-main.js.map": "/ElpolMorris/ejercicio_react/static/js/runtime-main.2628de15.js.map",
+    "static/js/2.00681738.chunk.js": "/ElpolMorris/ejercicio_react/static/js/2.00681738.chunk.js",
+    "static/js/2.00681738.chunk.js.map": "/ElpolMorris/ejercicio_react/static/js/2.00681738.chunk.js.map",
+    "index.html": "/ElpolMorris/ejercicio_react/index.html",
+    "static/css/main.7038a105.chunk.css.map": "/ElpolMorris/ejercicio_react/static/css/main.7038a105.chunk.css.map",
+    "static/js/2.00681738.chunk.js.LICENSE.txt": "/ElpolMorris/ejercicio_react/static/js/2.00681738.chunk.js.LICENSE.txt",
+    "static/media/lista.04272748.svg": "/ElpolMorris/ejercicio_react/static/media/lista.04272748.svg",
+    "static/media/Main.module.css": "/ElpolMorris/ejercicio_react/static/media/torres.1a8207ca.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2628de15.js",
+    "static/js/2.00681738.chunk.js",
+    "static/css/main.7038a105.chunk.css",
+    "static/js/main.b7d73b83.chunk.js"
+  ]
+}
