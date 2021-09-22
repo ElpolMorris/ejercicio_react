@@ -3,7 +3,7 @@ import styles from "./NavLink.module.css"
 import { Link } from 'react-router-dom'
 import MenuIcon from "../../images/lista.svg"
 import useWindowDimensions from "../../hooks/use-window-dimensions/useWindowDimensions"
-import { useHistory } from 'react-router'
+import { useHistory, useLocation } from 'react-router'
 import { useSelectors } from '../../store/useSelectors'
 import { useDispatch } from 'react-redux'
 import { exitLogin } from '../../store/login/actions'
@@ -13,14 +13,17 @@ interface Props {
 }
 
 const NavLink = (props: Props) => {
+    const {pathname} = useLocation()
     const history = useHistory()
     const dispatch = useDispatch()
     const login = useSelectors(state => state.login.success)
+    const username = useSelectors(state => state.departure.user.username)
     const {width} = useWindowDimensions()
     const [displayMenu, setDisplayMenu] = useState(false);
 
     const handleDisplayMenu = () => {
 		setDisplayMenu(!displayMenu);
+        console.log(username)
 	};
     const closeSession = () => {
         localStorage.clear()
@@ -39,7 +42,7 @@ const NavLink = (props: Props) => {
             
             <div className={`${!displayMenu && width < 568 ? styles.none : ""}`}>
                 {
-                    login ? <><p>Bienvenido</p><p onClick={closeSession} className={styles.pointer}>Cerrar Sesión</p></> : <>
+                    login ? <><p>Bienvenido <span className={styles["mr-2"]}>{pathname === "/admin" ? "admin" : `${username}` ?? ""}</span></p><p onClick={closeSession} className={styles.pointer}>Cerrar Sesión</p></> : <>
                     
                     <Link to="/login">Ingresar</Link>
                     <Link to="/register">Registrese</Link>

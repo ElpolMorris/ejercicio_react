@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     opacity: 0.8;
+    z-index: 1500;
 }
 .nav > div {
     width: 50%;
@@ -33,6 +34,9 @@
 .pointer{
     cursor: pointer;
     color: white;
+}
+.mr-2{
+    margin-right: 0.3rem;
 }
 @media  (max-width: 568px){
     .nav {

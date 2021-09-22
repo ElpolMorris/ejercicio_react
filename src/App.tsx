@@ -12,7 +12,6 @@ import Dashboard from './containers/dashboard/Dashboard';
 import NavLink from './components/navlink/NavLink';
 import PrivateRoute from './components/private-route/PrivateRoute';
 import useStorage from "./hooks/use-storage/useStorage"
-import { loginThunk } from './store/login/thunks';
 import AdminDash from './containers/admin-dash/AdminDash';
 
 function App() {

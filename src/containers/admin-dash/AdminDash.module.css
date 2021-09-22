@@ -1,0 +1,16 @@
+.space-nav {
+    margin-top: 4rem;
+}
+
+.center{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.list-center{
+    margin: 0px auto;
+    width: 50%;
+}
+.list-center > li {
+    text-align: center;
+}

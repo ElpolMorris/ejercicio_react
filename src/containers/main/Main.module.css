@@ -3,7 +3,8 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position-y: -20rem;
-    height: 100vh;
+    min-height: 100vh;
+    filter: contrast(80%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +14,11 @@
 .landscape > div {
     width: 40vw;
     text-align: center;
+    filter: contrast(100%);
+    background-color: #71A8D9;
+    padding: 0.3rem;
+    border-radius: 10px;
+    opacity: 0.80;
 }
 @media (max-width: 568px){
     .landscape{

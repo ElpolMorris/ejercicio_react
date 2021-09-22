@@ -3,10 +3,7 @@ import {GET_USERS_INIT,
     GET_USERS_FAILURE,
     USER_DELETE_INIT,
     USER_DELETE_SUCCESS,
-    USER_DELETE_FAILURE,
-    USER_CREATE_INIT,
-    USER_CREATE_SUCCESS,
-    USER_CREATE_FAILURE} from "./constants"
+    USER_DELETE_FAILURE} from "./constants"
 
     import store from "../store";
 export const getUsersInit = () => {
@@ -16,7 +13,7 @@ export const getUsersInit = () => {
 }
 export const getUsersFailure = (error: any) => {
     return ({
-        type: GET_USERS_INIT,
+        type: GET_USERS_FAILURE,
         payload: error
     })
 }

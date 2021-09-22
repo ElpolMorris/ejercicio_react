@@ -11,7 +11,7 @@ export const getUsersThunk = (token: string) => {
 	return async (dispatch: Function) => {
 		dispatch(getUsersInit());
 		try {
-			const res = await fetch(`http://localhost:4000/admin/dashboard`, {
+			const res = await fetch(`https://registro-salidas-montana-chile.herokuapp.com/admin/dashboard`, {
 				method: "get",
 				headers: {
 					"Content-Type": "application/json",
@@ -30,7 +30,7 @@ export const deleteUsers = (id: number, token: string) => {
 	return async (dispatch: Function) => {
 		dispatch(usersDeleteInit());
 		try {
-			await fetch(`http://localhost:4000/admin/users?id=${id}`, {
+			await fetch(`https://registro-salidas-montana-chile.herokuapp.com/admin/users?id=${id}`, {
 				method: "DELETE",
 				headers: {
 					"Content-Type": "application/json",

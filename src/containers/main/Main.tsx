@@ -15,7 +15,7 @@ const Main = (props: Props) => {
 
     useLayoutEffect(() => {
         if(login) history.replace("/dashboard")
-    }, [login])
+    }, [login,history])
 
     return (
         <div className={styles.landscape}>

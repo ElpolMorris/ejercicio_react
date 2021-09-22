@@ -10,10 +10,11 @@ export const loginThunk = ({ username, password }: Login) => {
 	return async(dispatch: Function) => {
 		dispatch(loginInit);
 		try {
-            const res = await fetch(`http://localhost:4000/login`,{
-                method: "post",
+            const res = await fetch(`https://registro-salidas-montana-chile.herokuapp.com/login`,{
+                method: "POST",
 				headers: {
 					"Content-Type": "application/json",
+					'Access-Control-Allow-Origin': '*',
 				},
 				body: JSON.stringify({ username: username, password: password })
             })

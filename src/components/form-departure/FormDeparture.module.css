@@ -1,5 +1,6 @@
 .form-style{
     width: 50%;
+    margin: 0px auto;
 }
 .form-group{
     padding: 0.5rem;
@@ -15,6 +16,9 @@
 
 .center {
     text-align: center;
+}
+.margin{
+    margin: 1rem 0px
 }
 @media (max-width: 578px){
     .form-style{

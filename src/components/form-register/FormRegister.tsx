@@ -38,7 +38,7 @@ const FormRegister = () => {
                 emergengyContact,
             }
             try {
-                const res: any = await fetch(`http://localhost:4000/register`, {
+                const res: any = await fetch(`https://registro-salidas-montana-chile.herokuapp.com/register`, {
                     method: "post",
                     headers: {
                         "Content-Type": "application/json",
